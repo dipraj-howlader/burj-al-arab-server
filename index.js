@@ -10,7 +10,7 @@ app.use(cors())
 app.use(bodyParser.json());
 const MongoClient = require('mongodb').MongoClient;
 
-var serviceAccount = require("./bruj-al-arab-d4c3a-firebase-adminsdk-jhvok-7f336a6bd6.json");
+var serviceAccount = require("./configs/bruj-al-arab-d4c3a-firebase-adminsdk-jhvok-7f336a6bd6.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
